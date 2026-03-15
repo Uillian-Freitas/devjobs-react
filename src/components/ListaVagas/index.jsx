@@ -1,4 +1,4 @@
-import { Container } from "./styles";
+import { Container, Lista } from "./styles";
 import Vagas from "../Vagas";
 
 const vagas = [
@@ -18,12 +18,16 @@ const vagas = [
         local: "Remoto"
     },
 ];
+    function ListaVagas({ busca }){
 
-function ListaVagas(){
+    const vagasFiltradas = vagas.filter((vaga) => 
+    vaga.titulo.toLowerCase().includes(busca.toLowerCase()));
+
     return(
         <Container>
             <h2>Vagas Disponíveis</h2>
-            {vagas.map((vaga, index) => (
+            <Lista>
+            {vagasFiltradas.map((vaga, index) => (
                 <Vagas
                 key={index}
                 titulo={vaga.titulo}
@@ -31,6 +35,7 @@ function ListaVagas(){
                 local={vaga.local}
                 />
             ))}
+            </Lista>
         </Container>
     );
 }
