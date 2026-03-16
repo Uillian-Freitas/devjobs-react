@@ -1,16 +1,82 @@
-# React + Vite
+# DevJobs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida em **React** para listar vagas de tecnologia e permitir que usuários pesquisem e se candidatem a oportunidades.
 
-Currently, two official plugins are available:
+## Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* React
+* Vite
+* Styled Components
+* JavaScript
+* CSS Grid
 
-## React Compiler
+## Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Listagem de vagas de tecnologia
+* Busca de vagas por:
 
-## Expanding the ESLint configuration
+  * título
+  * empresa
+  * local
+* Layout responsivo (mobile, tablet e desktop)
+* Botão de candidatura que remove a vaga da lista
+* Interface construída com componentes reutilizáveis
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Estrutura do projeto
+
+src/
+components/
+Header/
+Hero/
+Form/
+ListaVagas/
+Vagas/
+
+Cada pasta representa um **componente React** contendo:
+
+* `index.jsx` → lógica do componente
+* `styles.js` → estilização com styled-components
+
+## Como executar o projeto
+
+1. Clonar o repositório
+
+```bash
+git clone https://github.com/Uillian-Freitas/devjobs.git
+```
+
+2. Entrar na pasta do projeto
+
+```bash
+cd devjobs
+```
+
+3. Instalar dependências
+
+```bash
+npm install
+```
+
+4. Rodar o projeto
+
+```bash
+npm run dev
+```
+
+O projeto estará disponível em:
+
+```
+http://localhost:5173
+```
+
+## Próximas melhorias
+
+* Integração com API de vagas
+* Sistema de candidatura real
+* Paginação de vagas
+* Melhorias de UI
+* Testes automatizados
+
+## Autor
+
+Projeto desenvolvido por **Uillian Freitas** durante os estudos de desenvolvimento front-end.
