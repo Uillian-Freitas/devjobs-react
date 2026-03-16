@@ -1,17 +1,18 @@
-import { Card, Titulo, Info } from "./styles";
+import { Card, Titulo, Local, Empresa, Botao } from "./styles";
 
-function Vagas(props) {
+function Vagas({titulo, empresa, local, aoCandidatar}) {
     return(
         <Card>
             <Titulo>
-                {props.titulo}
+                {titulo}
             </Titulo>
-            <Info>
-                Empresa: {props.empresa}
-            </Info>
-            <Info>
-                Local: {props.local}
-            </Info>
+            <Empresa>
+                Empresa: {empresa}
+            </Empresa>
+            <Local>
+                Local: {local}
+            </Local>
+            <Botao onClick={aoCandidatar}>Candidatar-se</Botao>
         </Card>
     );
 }

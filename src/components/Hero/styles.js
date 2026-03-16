@@ -4,7 +4,13 @@ export const Container = styled.section`
 background-color: #f4f6fb;
 padding: 80px 20px;
 text-align: center;
+width: 100%;
 
+@media (max-width: 768px) {
+    padding: 40px 20px;
+    text-align: center;
+
+}
 `;
 
 export const Title = styled.h2`
@@ -16,5 +22,5 @@ margin-bottom: 16px;
 
 export const Subtitle = styled.p`
 font-size: 18px;
-color #555;
+color: #555;
 `;

@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import ListaVagas from "./components/ListaVagas";
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 
 
@@ -12,7 +13,7 @@ function App() {
       <Header/>
       <Hero busca={busca} setBusca={setBusca}/>
       <ListaVagas busca={busca}/>
-      
+      <Footer/>
     </>
   )
 }
