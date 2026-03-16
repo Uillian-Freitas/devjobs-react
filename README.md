@@ -1,5 +1,8 @@
 # DevJobs
 
+🚀 **Demo do projeto:**  
+👉 https://devjobs-react.vercel.app/
+
 Aplicação web desenvolvida em **React** para listar vagas de tecnologia e permitir que usuários pesquisem e se candidatem a oportunidades.
 
 ## Tecnologias utilizadas
